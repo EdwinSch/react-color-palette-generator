@@ -66,8 +66,8 @@ html {
 
 body {
   background: var(--backgroundColor);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 400;
   line-height: 1;
   color: var(--textColor);
@@ -255,22 +255,21 @@ ul {
 /* ============= PROJECT CSS =============== */
 
 .container {
-  padding: 2rem;
+  padding: 1rem;
   display: grid;
-  row-gap: 1.5rem;
-  height: 160px;
+  row-gap: 1rem;
 }
 
 .color-form {
   display: flex;
 }
-input[type='text'] {
+input[type="text"] {
   border-color: transparent;
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   max-width: 200px;
 }
-input[type='color'] {
+input[type="color"] {
   height: 100%;
   background-color: var(--white);
   border-color: var(--white);
@@ -293,6 +292,19 @@ input[type='color'] {
   }
 }
 
+.info {
+  display: flex;
+  padding: 0 1rem;
+  margin: 20px 0;
+}
+.icon {
+  color: blue;
+  font-size: 18px;
+}
+.info p {
+  margin-left: 10px;
+}
+
 .colors {
   min-height: calc(100vh - 160px);
   display: grid;
@@ -301,9 +313,13 @@ input[type='color'] {
 }
 .color {
   padding: 1rem 2rem;
-  cursor: pointer;
   font-size: 1rem;
 }
+.color:hover {
+  border: dashed black 1px;
+  cursor: pointer;
+}
+
 .color p {
   line-height: 1.5;
   margin-bottom: 0.25rem;
