@@ -6,4 +6,4 @@ Showcasing: input/form handling, state handling, components and the usage of mul
 
 Library credits: Values.js, Toastify, Nanoid and react-icons.
 
-🚀 [Deployed Version](https://)
+🚀 [Deployed Version](https://colorpalettegenerator.netlify.app/)
