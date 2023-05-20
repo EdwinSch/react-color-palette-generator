@@ -1,10 +1,11 @@
 import { useState } from "react";
 
-const Form = () => {
+const Form = ({ addColor }) => {
   const [color, setColor] = useState("");
 
-  const handleSumbit = () => {
-    return;
+  const handleSumbit = (event) => {
+    event.preventDefault();
+    addColor(color);
   };
 
   return (
